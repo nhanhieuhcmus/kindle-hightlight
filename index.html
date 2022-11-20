@@ -22,8 +22,8 @@
                 const pdfSection = document.getElementById("file-content");
                 var opt = {
                     margin: 1,
-                    filename: "myfile.pdf",
-                    image: { type: "jpeg", quality: 0.98 },
+                    filename: "my_hightlight.pdf",
+                    image: { type: "jpeg", quality: 1.0 },
                     html2canvas: { scale: 2 },
                     jsPDF: {
                         unit: "in",
@@ -39,9 +39,12 @@
     </head>
     <body>
         <input type="file" id="file-input" />
-        <button onclick="generatePDF()">Generate PDF</button>
+        <div>
+            <button onclick="generatePDF()">Generate PDF</button>
+        </div>
         <h3>Here're your hightlights:</h3>
         <pre id="file-content"></pre>
+        <span>from <a href="https://www.facebook.com/nhan.hieu.hcmus">NhanHieu</a> with ❤️</span>
         <script src="./index.js"></script>
     </body>
 </html>
